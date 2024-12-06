@@ -1,7 +1,10 @@
+import ExcelReader from "./utils/ExcelReader"
+
 function App() {
   return (
     <div>
-      test
+      <h1>Leitor de Excel</h1>
+      <ExcelReader/>
     </div>
   )
 }
