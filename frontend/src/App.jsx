@@ -1,12 +1,16 @@
-import ExcelReader from "./utils/ExcelReader"
+import React from 'react';
+import ExcelReader from './utils/ExcelReader';
+import DataContext from './context/DataContext';
 
 function App() {
   return (
-    <div>
-      <h1>Leitor de Excel</h1>
-      <ExcelReader/>
-    </div>
-  )
+    <DataContext.Provider>
+      <div>
+        <h1>Leitor de Excel</h1>
+        <ExcelReader />
+      </div>
+    </DataContext.Provider>
+  );
 }
 
-export default App
+export default App;
